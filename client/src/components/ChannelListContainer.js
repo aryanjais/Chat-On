@@ -20,9 +20,9 @@ const SideBar = () => (
     </div>
 )
 
-const Companyheader = () => (
+const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">Text Messaging web App</p>
+        <p className="channel-list__header__text">Chat-On</p>
     </div>
 )
 
@@ -31,7 +31,40 @@ const Companyheader = () => (
          <>
              <SideBar/>
              <div className="channel-list__list__wrapper">
-                <Companyheader/>
+                <CompanyHeader/>
+                <ChannelSearch/>
+                <ChannelList
+                filters={{}}
+                channelRenderFilterFn={() => {}}
+                List={(listProps) => (
+                    <TeamChannelList
+                    {...listProps}
+                    type="team"
+                    />
+                    )}
+                    Preview={(previewProps) => (
+                        <TeamChannelPreview
+                        {...previewProps}
+                        type="team"
+                        />
+                    )}
+                    />
+                <ChannelList
+                filters={{}}
+                channelRenderFilterFn={() => {}}
+                List={(listProps) => (
+                    <TeamChannelList
+                    {...listProps}
+                    type="messaging"
+                    />
+                    )}
+                    Preview={(previewProps) => (
+                        <TeamChannelPreview
+                        {...previewProps}
+                        type="messaging"
+                        />
+                    )}
+                    />
              </div>
          </>
      )
