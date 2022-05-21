@@ -1,12 +1,11 @@
 import React from 'react';
 import {StreamChat} from 'stream-chat';
 import {Chat} from 'stream-chat-react';
-import cookies from 'universal-cookie';
+import Cookies from 'universal-cookie';
 
 import {ChannelListContainer,ChannelContainer, Auth} from './components';
 
 import './App.css';
-import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
 
