@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #005fff;
+    --primary-color: #212121;
     --primary-color-alpha: #005fff1a;
   }
   
@@ -21,13 +21,15 @@
   }
   
   .auth__form-container_fields {
-    flex: 2;
+    /* flex: 2; */
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-  
+    align-items: center;
     padding: 2rem;
-    background: #005fff;
+    background: #181818;
+    /* margin: auto; */
   }
   
   .auth__form-container_image {
@@ -50,13 +52,16 @@
     box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
     border-radius: 5px;
     transition: 0.8s ease;
-    background: #fff;
+    background: #212121;
+    width: 400px;
+    height: fit-content;
+    max-height: 650px;
   }
   
   .auth__form-container_fields-content p {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #05245a;
+    color: #f5f5f5;
     font-weight: 900;
   }
   
@@ -70,8 +75,8 @@
   
   .auth__form-container_fields-content_input label {
     margin-bottom: 0.45rem;
-    color: rgb(61, 79, 88);
-    font-size: 12px;
+    color: rgb(219, 219, 219);
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.7px;
     line-height: 1.3;
@@ -81,11 +86,12 @@
     padding: 0.55rem 0.4rem;
     border: 1px solid rgb(184, 196, 194);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     transition: all 150ms ease-in-out 0s;
     width: 85%;
-    background: #fff;
+    background: #5b5b5b;
+    color: rgb(219, 219, 219);
   }
   
   .auth__form-container_fields-content_input input::placeholder {
@@ -120,9 +126,9 @@
   
   .auth__form-container_fields-content_button button {
     border-radius: 4px;
-    background: #005fff;
-    border: 1px solid #005fff;
-    color: #fff;
+    background: #212121;
+    border: 2px solid #0066ff;
+    color: #0066ff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     padding: 0.7rem 1.2rem;
@@ -132,7 +138,10 @@
   }
   
   .auth__form-container_fields-content_button button:hover {
-    background: #0066ff;
+    /* background: #0066ff; */
+    /* color: black; */
+    /* border: 3px solid #0066ff; */
+    font-size: 16px;
   }
   
   .auth__form-container_fields-account {
@@ -145,12 +154,12 @@
   
   .auth__form-container_fields-account p {
     font-size: 14px;
-    color: #000;
+    color: #CACACA;
     font-weight: 500;
   }
   
   .auth__form-container_fields-account span {
-    color: #05245a;
+    color: #0066ff;
     cursor: pointer;
     font-weight: 700;
   }
@@ -372,8 +381,7 @@
   
   .channel-list__sidebar {
     width: 72px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      var(--primary-color);
+    background: #181818;
     box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
     /* border-top-left-radius: 16px; */
     /* border-bottom-left-radius: 16px; */
@@ -846,7 +854,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background: #ffffff;
+    background: #181818;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
     border-top-right-radius: 16px;
     z-index: 1;
@@ -865,7 +873,7 @@
     font-family: Helvetica Neue, sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: #2c2c30;
+    color: #cacaca;
     margin-right: 8px;
   }
   
@@ -1042,7 +1050,9 @@
   }
   
   .str-chat__message-team:hover {
-    background: #e9e9ea;
+    background: #282828;
+    border-radius: 15px;
+
   }
   
   .str-chat__message-team-group {
@@ -1056,13 +1066,15 @@
     font-style: normal;
     font-weight: normal;
     line-height: 120%;
-    color: #000000;
+    color: #cacaca;
     margin: 0;
     background: none;
   }
+
   
   .str-chat__message-team:hover .str-chat__message-team-content {
     background: none;
+    
   }
   
   .str-chat__message-team-meta {
@@ -1408,7 +1420,7 @@
   
   .team-message-input__wrapper .str-chat__textarea textarea {
     display: flex;
-    background: #fff;
+    background: blue;
     border: none;
     outline: none;
     font-family: Helvetica Neue, sans-serif;
@@ -1423,7 +1435,7 @@
     border: none;
     outline: none;
     box-shadow: none;
-    background: #fff;
+    background: black;
   }
   
   .team-message-input__wrapper .str-chat__textarea textarea::placeholder {
@@ -1704,7 +1716,7 @@
     outline: none;
   }
   
-  .team-channerl-header_menu-icon {
+  .team-channel-header_menu-icon {
     display: none;
   }
   
@@ -1734,6 +1746,7 @@
   .str-chat__input-flat {
     width: 100%;
     padding: 10px;
+    background: #404040;
   }
   
   @media screen and (max-width: 960px) {
