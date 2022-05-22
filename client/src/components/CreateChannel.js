@@ -7,6 +7,7 @@ import { CloseCreateChannel } from '../assets';
 const ChannelNameInput = ({ channelName = '', setChannelName }) => {
     const { client, setActiveChannel } = useChatContext();
     const [selectedUsers, setSelectedUsers] = useState([client.userID || ''])
+    
     const handleChange = (event) => {
         event.preventDefault();
 
@@ -49,18 +50,18 @@ const CreateChannel = ({ createType, setIsCreating }) => {
     }
 
     return (
-        <div className="create-channel__container">
-            <div className="create-channel__header">
-                <p>{createType === 'team' ? 'Create a New Channel' : 'Send a Direct Message'}</p>
-                <CloseCreateChannel setIsCreating={setIsCreating} />
-            </div>
-            {createType === 'team' && <ChannelNameInput channelName={channelName} setChannelName={setChannelName}/>}
-            <UserList setSelectedUsers={setSelectedUsers}/>
-            <div className="create-channel__button-wrapper" onClick={createChannel}>
-                <p>{createType === 'team' ? 'Create Channel' : 'Create Message Group'}</p>
-            </div>
-        </div>
+      <div className="create-channel__container">
+          <div className="create-channel__header">
+              <p>{createType === 'team' ? 'Create a New Channel' : 'Send a Direct Message'}</p>
+              <CloseCreateChannel setIsCreating={setIsCreating} />
+          </div>
+          {createType === 'team' && <ChannelNameInput channelName={channelName} setChannelName={setChannelName}/>}
+          <UserList setSelectedUsers={setSelectedUsers}/>
+          <div className="create-channel__button-wrapper" onClick={createChannel}>
+              <p>{createType === 'team' ? 'Create Channel' : 'Create Message Group'}</p>
+          </div>
+      </div>
     )
 }
 
-export default CreateChannel
+export default CreateChannel;
