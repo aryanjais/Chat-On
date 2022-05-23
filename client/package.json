@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aryanjais.github.io",
+  "homepage": "https://aryanjais.github.io/Chat-On",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
