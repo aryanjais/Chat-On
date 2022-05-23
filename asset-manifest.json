@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Chat-On/static/css/main.d83b2a5d.css",
+    "main.js": "/Chat-On/static/js/main.cab7c691.js",
+    "static/js/291.36683292.chunk.js": "/Chat-On/static/js/291.36683292.chunk.js",
+    "static/js/303.47abf14c.chunk.js": "/Chat-On/static/js/303.47abf14c.chunk.js",
+    "static/js/717.fd776f4e.chunk.js": "/Chat-On/static/js/717.fd776f4e.chunk.js",
+    "static/js/829.9c80d606.chunk.js": "/Chat-On/static/js/829.9c80d606.chunk.js",
+    "static/media/EmojiOneColor.woff2": "/Chat-On/static/media/EmojiOneColor.90ee5fb894c8d349bc54.woff2",
+    "static/media/NotoColorEmoji-flags.woff2": "/Chat-On/static/media/NotoColorEmoji-flags.148141acfb7ce6e4f383.woff2",
+    "index.html": "/Chat-On/index.html",
+    "main.d83b2a5d.css.map": "/Chat-On/static/css/main.d83b2a5d.css.map",
+    "main.cab7c691.js.map": "/Chat-On/static/js/main.cab7c691.js.map",
+    "291.36683292.chunk.js.map": "/Chat-On/static/js/291.36683292.chunk.js.map",
+    "303.47abf14c.chunk.js.map": "/Chat-On/static/js/303.47abf14c.chunk.js.map",
+    "717.fd776f4e.chunk.js.map": "/Chat-On/static/js/717.fd776f4e.chunk.js.map",
+    "829.9c80d606.chunk.js.map": "/Chat-On/static/js/829.9c80d606.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d83b2a5d.css",
+    "static/js/main.cab7c691.js"
+  ]
+}
