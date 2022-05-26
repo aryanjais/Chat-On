@@ -1221,7 +1221,7 @@
   }
   
   .str-chat__message-attachment-actions-button--default {
-    background: #fff;
+    background: #212121;
     cursor: pointer;
   }
   
@@ -1343,6 +1343,9 @@
   
   .str-chat__message-team-content--single:not(.str-chat__message-team-content--image)::before {
     display: none;
+  }
+  .str-chat__message-team-content img{
+    max-width: 300px;
   }
   
   .team-message-input__wrapper {
