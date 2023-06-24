@@ -15,8 +15,7 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "save-dev": "^0.0.1-security",
-    "stream-chat": "^6.5.1",
-    "stream-chat-react": "^8.1.2",
+    "stream-chat-react": "^10.8.4",
     "universal-cookie": "^4.0.4",
     "web-vitals": "^2.1.4"
   },
