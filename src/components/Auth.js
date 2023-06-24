@@ -61,7 +61,7 @@ const Auth = () => {
                                     type="text"
                                     placeholder="Full Name"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
                         )}
@@ -72,7 +72,7 @@ const Auth = () => {
                                     type="text"
                                     placeholder="Username"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
                         {isSignup && (
@@ -83,11 +83,11 @@ const Auth = () => {
                                     type="text"
                                     placeholder="Phone Number"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
                         )}
-                        {isSignup && (
+                        {/* {isSignup && (
                             <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="avatarURL">Avatar URL</label>
                                 <input 
@@ -95,10 +95,10 @@ const Auth = () => {
                                     type="text"
                                     placeholder="Avatar URL"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
-                        )}
+                        )} */}
                         <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="password">Password</label>
                                 <input 
@@ -106,7 +106,7 @@ const Auth = () => {
                                     type="password"
                                     placeholder="Password"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
                         {isSignup && (
@@ -117,7 +117,7 @@ const Auth = () => {
                                     type="password"
                                     placeholder="Confirm Password"
                                     onChange={handleChange}
-                                    required
+                                    notrequired
                                 />
                             </div>
                             )}
@@ -127,13 +127,8 @@ const Auth = () => {
                     </form>
                     <div className="auth__form-container_fields-account">
                         <p>
-                            {isSignup
-                             ? "Already have an account?" 
-                             : "Don't have an account?"
-                             }
-                             <span onClick={switchMode}>
-                             {isSignup ? 'Sign In' : 'Sign Up'}
-                             </span>
+                            {isSignup ? "Already have an account?" : "Don't have an account?"}
+                            <span onClick={switchMode}>{isSignup ? 'Sign In' : 'Sign Up'}</span>
                         </p>
                     </div>
                 </div> 

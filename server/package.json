@@ -7,7 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "concurrently \"npm run server\" \"cd ../client && npm start",
+    "start": "concurrently \"npm run server\" \"cd ../ && npm start",
     "server": "nodemon app.js",
     "dev": "nodemon index.js"
   },
